@@ -1,0 +1,71 @@
+//WINTER PACK DLC
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_AddOn_Rifle_Winter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Rifle_Winter_N&");
+        Description('&Craftplan_AddOn_Rifle_Winter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_AddOn_Winter", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(3087);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+
+    Item("Craftplan_AddOn_Machete_Winter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Machete_Winter_N&");
+        Description('&Craftplan_AddOn_Machete_Winter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Melee_Machete_AddOn_Winter", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(3088);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+
+    Item("Craftplan_AddOn_Knife_Winter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Knife_Winter_N&");
+        Description('&Craftplan_AddOn_Knife_Winter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Knife", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Melee_Knife_AddOn_Winter", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(3089);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+        RepairWhenCrafting(false);
+    }
+}

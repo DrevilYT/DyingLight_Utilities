@@ -1,0 +1,123 @@
+sub main()
+{    
+    Skill("Nitro_Level1")
+    {
+		SkillSlot(0);
+		
+        ActiveModifier("acceleration_mod", "Add", "300.0");
+		ActiveModifier("tire_grip_mod", "Add", "100.0");
+        ActiveModifier("top_speed_mod", "Add", "300.0");
+        ActiveModifier("nitro_active", "Set", "true");
+        ActiveModifier("overheat_dps", "Add", "200.0");
+        ActiveModifier("overheat_time", "Set", "100000.0");
+        ActiveModifier("flame_thrower_active", "Set", "true");
+		
+		RequireFlame(false);
+		RequireEngineStarted(false);
+		RequireNitro(false);
+		RequireThrottle(false);
+    }
+    
+    Skill("Nitro_Level2")
+    {
+		SkillSlot(0);
+		
+        ActiveModifier("acceleration_mod", "Add", "300.0");
+		ActiveModifier("tire_grip_mod", "Add", "100.0");
+        ActiveModifier("top_speed_mod", "Add", "300.0");
+        ActiveModifier("nitro_active", "Set", "true");
+        ActiveModifier("overheat_dps", "Add", "200.0");
+        ActiveModifier("overheat_time", "Set", "100000.0");
+        ActiveModifier("flame_thrower_active", "Set", "true");
+		
+		RequireFlame(false);
+		RequireEngineStarted(false);
+		RequireNitro(false);
+		RequireThrottle(false);
+    }
+	
+	Skill("UV_Level1")
+    {
+		SkillSlot(0);
+
+        ActiveModifier("uv_active", "Set", "true");
+		ActiveModifier("uv_level", "Set", "1");
+		
+		RemoteActivationDistance(25.0);
+		RemoteSkillType(1);
+		
+		ActiveTime(20.0);
+		Cooldown(10.0);
+    }
+	
+	Skill("UV_Level2")
+    {
+		SkillSlot(0);
+
+        ActiveModifier("uv_active", "Set", "true");
+		ActiveModifier("uv_level", "Set", "2");
+        ActiveModifier("electric_cage_active", "Set", "true");
+		
+		RemoteActivationDistance(999999.0);
+		RemoteSkillType(1);
+		
+		ActiveTime(9999.0);
+		Cooldown(0.0);
+    }
+	
+	Skill("Audio")
+    {
+		SkillSlot(0);
+
+        ActiveModifier("audio_active", "Set", "true");
+		
+		RemoteActivationDistance(25.0);
+		RemoteSkillType(0);
+		
+		ActiveTime(32.0);
+		Cooldown(10.0);
+    }
+	
+	Skill("ElectricCage")
+    {
+		SkillSlot(0);
+
+        ActiveModifier("electric_cage_active", "Set", "true");
+		
+		RemoteActivationDistance(25.0);
+		RemoteSkillType(2);
+		
+		ActiveTime(100.0);
+		Cooldown(0.0);
+    }
+
+	Skill("FlameThrower")
+    {
+		SkillSlot(0);
+
+        ActiveModifier("flame_thrower_active", "Set", "true");
+		
+		RemoteActivationDistance(25.0);
+		RemoteSkillType(3);
+		
+		RequireFlame(true);
+    }
+	
+	Skill("MineDispenser")
+	{
+		SkillSlot(0);
+		
+		ActiveModifier("mine_dispenser_active", "Set", "true");
+		
+		RemoteActivationDistance(99999.0);
+		RemoteSkillType(4);
+		
+		ActiveTime(0.0);
+		Cooldown(0.0);
+		
+		RequiredItem("ZZZZ3_Mine", 1);
+		
+		FailedActivationSoundName("buggy_mine_empty.wav");
+		FailedActivationSoundElementName("mine_dispenser");
+	}
+}

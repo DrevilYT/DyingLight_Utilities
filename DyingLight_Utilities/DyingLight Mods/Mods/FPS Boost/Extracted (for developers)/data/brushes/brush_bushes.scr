@@ -1,0 +1,72 @@
+sub main()
+{
+  brush("brush_bushes")
+  {
+    brush_params()
+    {
+      image("roundsoft.png");
+      image_rotation(0);
+      extent_size(0.0);
+      extent_min(0.0);
+      extent_max(0.0);
+      power(0.0);
+      power_min(0.0);
+      power_max(0.0);
+      fade_distance(0.0);
+      fade_min(0.0);
+      fade_max(0.0);
+      mask("");
+    }
+    functionality("Add hierarchical selection")
+    {
+      func_params()
+      {
+        num_add_trials( 10 );
+        eds_data()
+        {
+          eds_file( "dlc_wl_bush_brush_b.eds" );
+          seed( 0 );
+          required_tags( "0" );
+          forbidden_tags( "0" );
+          randomize_seed( true );
+          randomize_Y_rotation( true );
+          randomize_Y_rotation_snap( 0.0 );
+          align_to_terrain_by_normal( false );
+          snap_distance( -0.0 );
+          scale_min( 0.0 );
+          scale_max( 0.0 );
+          distances( 0.0, 0.0, 0.0, -0.0 );
+          max_slope( 0.0 );
+          weight( 0 );
+        }
+        eds_data()
+        {
+          eds_file( "dlc_wl_bush_brush_c.eds" );
+          seed( 0 );
+          required_tags( "0" );
+          forbidden_tags( "0" );
+          randomize_seed( true );
+          randomize_Y_rotation( true );
+          randomize_Y_rotation_snap( 0.0 );
+          align_to_terrain_by_normal( false );
+          snap_distance( -0.0 );
+          scale_min( 0.0 );
+          scale_max( 0.0 );
+          distances( 0.0, 0.0, 0.0, -0.0 );
+          max_slope( 0.0 );
+          weight( 0 );
+        }
+      }
+      brush_params()
+      {
+        extent_factor(0.0);
+        extent_min(0.0);
+        extent_max(0.0);
+        power_min(0.0);
+        power_max(0.0);
+        fade_min(0.0);
+        fade_max(0.0);
+      }
+    }
+  }
+}

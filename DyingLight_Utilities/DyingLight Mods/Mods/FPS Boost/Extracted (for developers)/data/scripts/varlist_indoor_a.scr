@@ -1,0 +1,3 @@
+VarInt("i_indoor_on", 0)
+VarFloat("f_srl_near", 0)
+VarFloat("f_srl_far", 0)

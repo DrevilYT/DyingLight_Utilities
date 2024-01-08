@@ -1,0 +1,2 @@
+ VarFloat("f_ed_pp_zbuffer_distance_min", 0.0)
+ VarFloat("f_ed_pp_zbuffer_distance_max", 0.0)

@@ -1,0 +1,57 @@
+import "inventorystuff.scr"
+
+sub crash_item_creation()
+{
+    Item("EnterSomeRandomShitHere", CategoryType_Throwable)
+	{ 
+	    Name("Crash Item");
+		ItemType(ItemType_ThrowingStar);
+		Visibility(true);
+		AmmoCount(5);
+		MaxStackCount(666);
+		Price(100);
+		Mesh("wn_short_knife_c_hq.msh");
+		SkinTag("Weapon_Craft0");
+		AnimPrefix("Thrower");
+		PhysicsScript("single_dropped_inventory.phx");
+		HudIcon("weapon_knife");
+		Condition(1);
+		Damage(118.0);
+		Force(10.0);
+		DamageToPhysicsObjects(118.0);
+		CriticalProb(0.0);
+		CriticalDamage(1.0);
+		DamageRange(0.01);
+		PhysicsDamageMul(0.1);
+		StaminaUsage(0.0);
+		HeadCutProb(0.0);
+		ArmsCutProb(0.0);
+		LegsCutProb(0.0);
+		DamageType(DamageType_Cut);
+		MinDamageAngle(1.0);
+		MaxDamageAngle(1.0);
+		MinDamageMult(1.0);
+		MinHitSeverity(HitSeverity_Medium);
+		MaxHitSeverity(HitSeverity_Medium);
+		HorizontalAttackDamageMul(1.0);
+		TwoHanded(false);
+		HolderElement("bip01 r thigh");
+		HolderOffset([0.0,0.1,0.1] *[0.01, 0.01, 0.01]);
+		HolderAngle([0.0,0.0,-90.0]);
+		AiHitSound("knife");
+		use HitEffects_Default();
+		BloodSplatFactor(0.5);
+		DamageSize(1.0);
+		FF_EffectName("Throw_Knife");
+		FF_Left(1.0);
+		FF_Right(1.0);
+		FF_Duration(0.5);
+		FF_FadeOut(1.0);
+		Reparable(false);
+		ThrowBeginSound("knife_throw.wav");
+		NoiseType("NONE");
+		Color(Color_Platinum);
+		EquipmentSlot(0);
+		GenType(GenType_None);
+    }
+}

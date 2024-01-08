@@ -1,0 +1,36 @@
+!Resolution(i,i)
+!WindowOffset(i,i)
+!Monitor(i)                    // -1 primary monitor
+!DX11()                        // game will use DirectX 11
+!TextureQuality(s)             // Low, Medium, High
+!GammaFloat(f)
+!MaxRefresh(i)
+!Shadows(s)                    // Low, High
+!ShadowMapSize(i)
+!SpotShadowMapSize(i)
+!Fullscreen()
+!VSync(i)                      // vertical sync; 0 - disable, 1 - every frame, 2 - every 2 frames, etc.
+!GrassQuality(i)               // lower is better
+!NvidiaEffects(i,i)            // enable extra nvidia effects
+!ExtraGameFov(f)               // extra fov
+!VisRange(f,f)
+!PostProcessQuality(i)
+
+Resolution(1920,1080)
+Borderless()
+MaxFPS(60)
+Monitor(0)
+TextureQuality("Medium")
+VisRange(1.00, 1.00)
+ShadowMapSize(256)
+SpotShadowMapSize(256)
+GammaFloat(1.50)
+GrassQuality(2)
+VSync(0)
+ExtraGameFov(40.00)
+AmbientOcclusion(0)
+MotionBlur(0)
+AntiAliasing(0)
+DisableDWM(1)
+3dtvSettings(-0.150000, 0.000000)
+Version(1)

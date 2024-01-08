@@ -1,0 +1,110 @@
+import "inventorystuff.scr" 
+sub gen_dlc98_creation() 
+{
+	Item("Craftplan_ImpactShieldn", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ImpactShieldn_N&");
+        Description('&Craftplan_ImpactShieldn_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1600);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Shield_Pro", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_Sugar", 1);
+        RequiredItem("Craft_Bleach", 1);
+        NamePrefix("&Craftplan_ImpactShield_N&");
+        Elemental(Elemental_ImpactElectricity, 3);
+        Color(Color_Blue);
+        CraftplanType("Utility");
+        UniqueSaveID(88);
+        HudIcon("riot_shield");
+		OwnedAtStart();
+    }
+
+    Item("Craftplan_ElectricShieldn", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ElectricShieldn_N&");
+        Description('&Craftplan_ElectricShieldn_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1600);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Shield_Pro", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 1);
+        NamePrefix("&Craftplan_ElectricShield_N&");
+        Elemental(Elemental_ShockElectricity, 3);
+        Color(Color_Blue);
+        CraftplanType("Utility");
+        UniqueSaveID(89);
+        HudIcon("riot_shield");
+		OwnedAtStart();
+    }
+
+    Item("Craftplan_FreezeShieldn", CategoryType_Collectable)
+    {
+        Name("&Craftplan_FreezeShieldn_N&");
+        Description('&Craftplan_FreezeShieldn_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1600);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Shield_Pro", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_ToxicPlant", 4);
+        RequiredItem("Craft_Shroom", 3);
+        NamePrefix("&Craftplan_FreezeShield_N&");
+        Elemental(Elemental_Freezing, 3);
+        Color(Color_Blue);
+        CraftplanType("Utility");
+        UniqueSaveID(90);
+        HudIcon("riot_shield");
+		OwnedAtStart();
+    }
+
+	Item("Craftplan_Mindblowing_Firearm_A", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Mindblowing_Firearm_A_N&");
+        Description('&Craftplan_Mindblowing_Firearm_A_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Platinum);
+        CraftedItem("Firearm_Challenge_RifleAGen", 1, 1);
+        CraftplanType("Wahkah");
+        UniqueSaveID(3081);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Mindblowing_Firearm_B", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Mindblowing_Firearm_B_N&");
+        Description('&Craftplan_Mindblowing_Firearm_B_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Platinum);
+        CraftedItem("Firearm_Challenge_RifleBGen", 1, 1);
+        CraftplanType("Wahkah");
+		Elemental(Elemental_BrainBlast, 4);
+        UniqueSaveID(3081);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+}

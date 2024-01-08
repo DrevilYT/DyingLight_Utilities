@@ -1,0 +1,3 @@
+This script unbans the usage of forbidden weapons in the BTZ/Be The Zombie/PVP mode of the game.
+
+New PVP patches are so bad, imagine not being able to use the Last Wish...
