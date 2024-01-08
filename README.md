@@ -3,7 +3,8 @@
 - [Download Latest Version](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
 
 # Includes
-- Mods
+## Mods
+- Too many to list lol
 ## Optimizations
 - Settings
 - Data Files
