@@ -1,0 +1,7 @@
+Place save_coop_num.sav in: 
+
+Steam:
+C:\Program Files (x86)\Steam\userdata\(your id)\239140\remote\out\save
+
+Epic:
+%UserProfile%\Documents\DyingLight\out\save
