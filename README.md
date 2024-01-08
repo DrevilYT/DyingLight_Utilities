@@ -3,7 +3,16 @@
 - [Download Latest Version](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
 
 # Includes
-## Script
+- Mods
+## Optimizations
+- Settings
+- Data Files
+- Mods
+## Game Optimizer
+- Dying Light Manager
+## Saves
+- Modded 100% saves
+- Legit 100% saves
 
 # Credits
 - [herifadam98](https://www.nexusmods.com/dyinglight/users/58580446) - Modded game save.
