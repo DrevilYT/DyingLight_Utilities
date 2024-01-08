@@ -1,4 +1,5 @@
 # DyingLight-Utilities
+- Latest Version: v1.1
 - [Download Latest Version](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
 
 # Credits
