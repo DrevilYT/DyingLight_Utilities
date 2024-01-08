@@ -21,7 +21,3 @@
 - [nloginov](https://www.youtube.com/@nloginov1915) - FPS boost modpack and all of the mods.
 - [vismxownz](https://gamebanana.com/members/1403960) - Dying light manager/optimizer.
 - [DrevilYT](https://github.com/drevilyt) - Legit 100% game saves, FPS data script and everything else.
-
-### tab Sex
-tab content  Sex
-fuck me ars
