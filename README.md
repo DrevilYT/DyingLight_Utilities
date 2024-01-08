@@ -1,5 +1,5 @@
 # DyingLight-Utilities
-[Download](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
+- [Download Latest Version](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
 
 # Credits
 - [Herifadam98](https://www.nexusmods.com/dyinglight/users/58580446): Modded game save.
