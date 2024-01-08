@@ -1,0 +1,20 @@
+sub main() {
+	telemetry_enabled(false)
+}
+sub set(privacy) {
+	if(!telemetry_enabled(false));
+	return true;
+	} else {
+		telemetry_enabled(false);
+		exception(true);
+		throw;
+	}
+
+private float void(AntiPLS[] PLSCheck) {
+	while(unchecked(set.VarFloat("insecure"));
+	{
+		do(getFlag (!isChecked);
+		return false;
+		throw NullPointerException;
+	}
+}

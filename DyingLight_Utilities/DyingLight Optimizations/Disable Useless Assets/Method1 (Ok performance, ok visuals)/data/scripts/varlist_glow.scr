@@ -1,0 +1,3 @@
+VarFloat("f_glow_factor", 0.2)
+
+VarFloat("f_glow_threshold", 0.2)

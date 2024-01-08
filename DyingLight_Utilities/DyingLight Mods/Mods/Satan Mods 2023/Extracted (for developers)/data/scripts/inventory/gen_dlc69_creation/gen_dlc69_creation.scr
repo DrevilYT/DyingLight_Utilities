@@ -1,0 +1,118 @@
+import "inventorystuff.scr" 
+sub gen_dlc69_creation() 
+{
+	Item("Craftplan_M72", CategoryType_Collectable)
+    {
+        Name("&Craftplan_M72_N&");
+        Description('&Craftplan_M72_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+		Elemental(Elemental_Burning, 4);
+        Color(Color_Platinum);
+        CraftedItem("FakeItem", 5, 1);
+        CraftplanType("Wahkah");
+        UniqueSaveID(696965);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Taser", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Taser_N&");
+        Description('&Craftplan_Taser_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+		Elemental(Elemental_ShockElectricity, 4);
+        Color(Color_Platinum);
+        CraftedItem("ZZZZFirearm_PVPPistol", 5, 1);
+        CraftplanType("Wahkah");
+        UniqueSaveID(696964);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Unknown", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Unknown_N&");
+        Description('&Craftplan_Unknown_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Baton", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+		BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_Pick", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Baseball", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+		BaseItem("Melee_Short", "", "");
+		BaseItem("zzz_Melee", "", "");
+		BaseItem("ZZ2Patch_Melee", "", "");
+		BaseItem("zzz01_Melee", "", "");
+		BaseItem("ZZZZ3_Melee", "", "");
+        RequiredItem("Craft_MetalScrap", 1);
+		Elemental(Elemental_Unknown, 4);
+		Elemental(Elemental_ShockElectricity, 4);
+		Elemental(Elemental_ImpactElectricity, 4);
+		Elemental(Elemental_Poison, 4);
+		Elemental(Elemental_Burning, 4);
+		Elemental(Elemental_Stunning, 4);
+		Elemental(Elemental_Freezing, 4);
+		Elemental(Elemental_Explosive, 4);
+		Elemental(Elemental_Water, 1);
+		Elemental(Elemental_FuelFumes, 1);
+        Color(Color_Platinum);
+        CraftplanType("Wahkah");
+        UniqueSaveID(696963);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Stasis", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Stasis_N&");
+        Description('&Craftplan_Stasis_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Baton", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+		BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_Pick", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Baseball", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+		BaseItem("Melee_Short", "", "");
+		BaseItem("zzz_Melee", "", "");
+		BaseItem("ZZ2Patch_Melee", "", "");
+		BaseItem("zzz01_Melee", "", "");
+		BaseItem("ZZZZ3_Melee", "", "");
+        RequiredItem("Craft_MetalScrap", 1);
+		Elemental(Elemental_StasisBlast, 4);
+        Color(Color_Platinum);
+        CraftplanType("Wahkah");
+        UniqueSaveID(696962);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+}

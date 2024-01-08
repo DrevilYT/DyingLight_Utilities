@@ -1,0 +1,30 @@
+import "inventorystuff.scr" 
+sub gen_dlc99_creation()
+{
+	Item("Craftplan_ImpactShieldn", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Grapple_Blade_N&");
+        Description("&Craftplan_Grapple_Blade_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1600);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 2);
+		Elemental(Elemental_Unknown, 4);
+        Elemental(Elemental_ShockElectricity, 4);
+        Elemental(Elemental_ImpactElectricity, 4);
+        Elemental(Elemental_Poison, 4);
+        Elemental(Elemental_Burning, 4);
+        Elemental(Elemental_Stunning, 4);
+        Elemental(Elemental_Freezing, 4);
+        Elemental(Elemental_Explosive, 4);
+        Elemental(Elemental_Water, 1);
+        Elemental(Elemental_FuelFumes, 1);
+        Color(Color_Platinum); 
+		CraftedItem("Special_Hook", 1, 1);
+        CraftplanType("Wahkah");
+        UniqueSaveID(88);
+        HudIcon("equipment_grappling_a");
+		OwnedAtStart();
+    }
+}

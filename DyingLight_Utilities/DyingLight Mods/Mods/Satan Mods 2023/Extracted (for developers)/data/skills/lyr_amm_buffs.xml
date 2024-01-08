@@ -1,0 +1,254 @@
+<buff id="lyr_passive_secondwind_I_cooldown" duration="300" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="RunForYourLifeLevel" value_add="-1.0"/>
+	<hud_icon val="skull_hud_icon"/>
+</buff>
+
+<buff id="lyr_passive_secondwind_II_cooldown" duration="150" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="RunForYourLifeLevel" value_add="-1.0"/>
+	<hud_icon val="skull_hud_icon"/>
+</buff>
+
+<buff id="lyr_passive_secondwind_O_regeneration" duration="10" max_stacks="5" apply_behaviour="ResetDuration">
+	<property name="HealthPerSecond" value_add="0.02"/>
+	<hud_icon val="health_icon"/>
+</buff>
+
+<buff id="lyr_passive_secondwind_O_protection" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="BuffDamageReduction" value_add="0.50"/>
+	<property name="AutoRamEnabled" value_add="1.0"/>
+	<hud_icon val="potion_timer_resistance"/>
+</buff>
+
+<buff id="lyr_passive_secondwind_O_slowdown" duration="3" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="FuryFreezeRadius" value_add="10"/>
+	<property name="LowHealthEffectThreshold" value_add="1"/>
+</buff>
+
+<!-- <buff id="lyr_passive_secondwind_O_manup" duration="10" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="ManUpAvailable" value_add="-1.0"/>
+</buff> -->
+
+<buff id="lyr_passive_safetynet" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="AutomaticFallDamping" set="true"/>
+	<property name="AdrenalineRushLevel" value_add="1.0"/>
+	<!-- <hud_icon val="safe_landing"/> -->
+</buff>
+
+<buff id="lyr_passive_momentum" duration="5" max_stacks="10" apply_behaviour="ResetDuration">
+	<property name="RunnerXPFactor" value_add="0.05"/>
+	<property name="MoveBackwardMaxSpeed" value_add="0.125"/>
+	<property name="MoveForwardMaxSpeed" value_add="0.25"/>
+	<property name="MoveStrafeMaxSpeed" value_add="0.25"/>
+	<property name="MoveSprintSpeed" value_add="0.25"/>
+	<hud_icon val="buff_speed"/>
+</buff>
+
+<buff id="lyr_passive_untouchable" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="EnemyGrabChance" value_add="-1.0"/>
+	<!-- <hud_icon val="dodge"/> -->
+</buff>
+
+<buff id="lyr_passive_untouchable_short" duration="3" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="EnemyGrabChance" value_add="-1.0"/>
+	<!-- <hud_icon val="dodge"/> -->
+</buff>
+
+<buff id="lyr_passive_bloodlust" duration="10" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="ChargeAdditionalRange" value_add="1"/>
+	<property name="StaminaGainOnKill" value_add="0.25"/>
+	<property name="EmptySwingStaminaUsageMul" value_add="-0.3"/>
+	<property name="WrestlingKickFastStandUp" value_add="1"/>
+</buff>
+
+<buff id="lyr_passive_bloodlust_stack" duration="10" max_stacks="5" apply_behaviour="ResetDuration">
+	<property name="StaminaGainOnKill" value_add="0.05"/>
+	<property name="EmptySwingStaminaUsageMul" value_add="-0.04"/>
+	<hud_icon val="kill_frenzy"/>
+</buff>
+
+<buff id="lyr_passive_brawler" duration="15" max_stacks="10" apply_behaviour="ResetDuration">
+	<property name="FistsCriticalChance" value_add="0.1"/>
+</buff>
+
+<buff id="lyr_combo_shieldwall" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="ShieldBacklashTimeWindow" value_add="4.50"/>
+	<property name="ShieldBacklashDamageFactor" value_add="4.00"/>
+	<property name="ShieldAttackBaseDamageMul" value_add="4.00"/>
+	<hud_icon val="riot_shield_small"/>
+</buff>
+
+<buff id="lyr_combo_fallingstar" duration="4" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="GroundPoundDamageMul" value_add="25"/>
+	<property name="GroundPoundRangeMul" value_add="3"/>
+	<property name="FighterXPSkillGroundPound" value_add="15"/>
+	<hud_icon val="groundpound"/>
+</buff>
+
+<!-- <buff id="lyr_combo_fallingstar_cooldown" duration="10" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="GroundPoundCooldown" value_add="10.00"/>
+</buff> -->
+
+<buff id="lyr_combo_cannonball" duration="4" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="WrestlingKickBaseDamageMul" value_add="x2.5"/>
+	<property name="WrestlingKickPhysicsDamage" value_add="0.5"/>
+	<property name="WrestlingKickRangeMul" value_add="0.2"/>
+	<property name="WrestlingKickFastStandUp" set="true"/>
+	<hud_icon val="heavy_dropkick"/>
+</buff>
+
+<buff id="lyr_combo_brutalthrow" duration="6" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="RopeThrowDamageMul" value_add="1"/>
+	<hud_icon val="throw"/>
+</buff>
+
+<buff id="lyr_combo_wreckingball" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="ChargeStick2HeavyBaseDamageMul" value_add="0.75"/>
+	<property name="ChargeStick2HeavyForceMul" value_add="5.00"/>
+	<property name="ChargeStick2HeavyPhysicsDamageMul" value_add="0.5"/>
+	<property name="FighterXPSkillWhirlwind" value_add="20"/>
+	<hud_icon val="whirlwind"/>
+</buff>
+
+<!-- <buff id="lyr_combo_wreckingball_cooldown" duration="5" max_stacks="1" apply_behaviour="ResetDuration">
+	<property name="WhirlwindChargeCooldown" value_add="5.00"/>
+</buff> -->
+
+<buff id="IncreaseMoveSpeed" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Momentum"/>
+		</require>
+		<ApplyBuff id="lyr_passive_momentum"/>
+	</OnGain>
+</buff>
+
+<buff id="FocusLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Bloodlust"/>
+		</require>
+		<ApplyBuff id="lyr_passive_bloodlust"/>
+		<ApplyBuff id="lyr_passive_bloodlust_stack"/>
+	</OnGain>
+</buff>
+
+<buff id="RunForYourLifeLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_SecondWind"/>
+		</require>
+		<AddHealthPercent value="0.05"/>
+		<ApplyBuff id="lyr_passive_secondwind_I_cooldown"/>
+		<ApplyBuff id="lyr_passive_secondwind_O_slowdown"/>
+		<!-- <ApplyBuff id="lyr_passive_secondwind_O_manup"/> -->
+		<ApplyBuff id="lyr_passive_secondwind_O_regeneration"/>
+	</OnGain>
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_SecondWind2"/>
+		</require>
+		<AddHealthPercent value="0.10"/>
+		<RemoveBuff id="lyr_passive_secondwind_I_cooldown"/>
+		<ApplyBuff id="lyr_passive_secondwind_II_cooldown"/>
+		<ApplyBuff id="lyr_passive_secondwind_O_protection"/>
+		<ApplyBuff id="lyr_passive_secondwind_O_regeneration"/>
+	</OnGain>
+	<OnGain>
+		<require>
+			<SkillReq id="HealthRegen1"/>
+		</require>
+		<ApplyBuff id="lyr_passive_secondwind_O_regeneration"/>
+	</OnGain>
+	<OnGain>
+		<require>
+			<SkillReq id="HealthRegen2"/>
+		</require>
+		<ApplyBuff id="lyr_passive_secondwind_O_regeneration"/>
+		<ApplyBuff id="lyr_passive_secondwind_O_regeneration"/>
+	</OnGain>
+</buff>
+
+<buff id="AdrenalineRushLevel1" duration="0">
+	<OnGain>
+		<RemoveBuff id="lyr_passive_safetynet"/>
+	</OnGain>
+</buff>
+
+<buff id="GrapplingHookStaminaBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_SafetyNet"/>
+		</require>
+		<ApplyBuff id="lyr_passive_safetynet"/>
+	</OnGain>
+</buff>
+
+<buff id="DodgeDamageBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_ShieldWall"/>
+		</require>
+		<ApplyBuff id="lyr_combo_shieldwall"/>
+	</OnGain>
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Untouchable"/>
+		</require>
+		<RemoveBuff id="lyr_passive_untouchable"/>
+		<ApplyBuff id="lyr_passive_untouchable_short"/>
+	</OnGain>
+</buff>
+
+<buff id="JumpOverZombieDamageBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_FallingStar"/>
+		</require>
+		<ApplyBuff id="lyr_combo_fallingstar"/>
+		<!-- <ApplyBuff id="lyr_combo_fallingstar_cooldown"/> -->
+	</OnGain>
+</buff>
+
+<buff id="JumpOverZombieStaminaBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Cannonball"/>
+		</require>
+		<ApplyBuff id="lyr_combo_cannonball"/>
+	</OnGain>
+</buff>
+
+<buff id="GroundPoundDamageReductionBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_BrutalThrow"/>
+		</require>
+		<ApplyBuff id="lyr_combo_brutalthrow"/>
+	</OnGain>
+</buff>
+
+<buff id="SlideDamageBoostLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_WreckingBall"/>
+		</require>
+		<ApplyBuff id="lyr_combo_wreckingball"/>
+		<!-- <ApplyBuff id="lyr_combo_wreckingball_cooldown"/> -->
+	</OnGain>
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Untouchable"/>
+		</require>
+		<RemoveBuff id="lyr_passive_untouchable_short"/>
+		<ApplyBuff id="lyr_passive_untouchable"/>
+	</OnGain>
+</buff>
+
+<buff id="FightingActionLevel1" duration="0">
+	<OnGain>
+		<require>
+			<SkillReq id="lyr_link_Brawler"/>
+		</require>
+		<ApplyBuff id="lyr_passive_brawler"/>
+	</OnGain>
+</buff>

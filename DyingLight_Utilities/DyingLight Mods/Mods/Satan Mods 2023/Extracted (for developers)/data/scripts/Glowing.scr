@@ -1,0 +1,117 @@
+sub Glow_all()
+{
+		Appearance("Antoine_Head", "Wahkah_Default", "Wahkah_Default")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(951);
+        }
+		Appearance("Antoine_Head", "Wahkah_Beige", "Wahkah_Beige")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a_btz");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(952);
+        }
+		Appearance("Antoine_Head", "Wahkah_NeonGreen", "Wahkah_NeonGreen")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a_green");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(953);
+        }
+		Appearance("Antoine_Head", "Wahkah_Green", "Wahkah_Green")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a_green_btz");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(954);
+        }
+		Appearance("Antoine_Head", "Wahkah_NeonPurple", "Wahkah_NeonPurple")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a_purple");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(955);
+        }
+		Appearance("Antoine_Head", "Wahkah_Purple", "Wahkah_Purple")
+        {
+            MeshFpp("player_4_fpp.msh");
+            MeshTpp("player_4_tpp.msh");
+            Skin("phosphor_paint_a_purple_btz");
+            Image("hint_tutorial_timefreeze_outfit11_phosphor");
+            Category(951);
+            ID(956);
+        }
+		Appearance("Satan_Head", "Satan_Purple", "Satan_Purple")
+        {
+            MeshFpp("player_tahir_fpp.msh");
+            MeshTpp("player_tahir_tpp.msh");
+            Skin("Default_purple");
+            Image("hint_tutorial_timefreeze_outfit_legend4");
+            Category(100);
+            ID(957);
+        }
+		Appearance("Satan_Head", "Satan_Green", "Satan_Green")
+        {
+            MeshFpp("player_tahir_fpp.msh");
+            MeshTpp("player_tahir_tpp.msh");
+            Skin("Default_green");
+            Image("hint_tutorial_timefreeze_outfit_legend4");
+            Category(100);
+            ID(958);
+        }
+		Appearance("Satan_Head", "Satan_Purple2", "Satan_Purple2")
+        {
+            MeshFpp("player_rise_fpp.msh");
+            MeshTpp("player_rise_tpp.msh");
+            Skin("Default_purple");
+            Image("hint_tutorial_timefreeze_outfit_legend10");
+            Category(100);
+            ID(959);
+        }
+		Appearance("Satan_Head", "Satan_Green2", "Satan_Green2")
+        {
+            MeshFpp("player_rise_fpp.msh");
+            MeshTpp("player_rise_tpp.msh");
+            Skin("Default_green");
+            Image("hint_tutorial_timefreeze_outfit_legend10");
+            Category(100);
+            ID(960);
+        }
+		Appearance("Satan_Head", "Satan_BTZ", "Satan_BTZ")
+        {
+            MeshFpp("player_2_fpp.msh");
+            MeshTpp("player_2_tpp.msh");
+            Skin("Player_2_zombie_btz_mask");
+            Image("hint_Tutorial_TimeFreeze_Outfit_AddOn_Masks_03");
+            Category(100);
+            ID(961);
+        }
+}
+
+sub Glow_unlock()
+{
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_Default");
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_Beige");
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_NeonGreen");
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_Green");
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_NeonPurple");
+	PlayerLevel("Status", 0, "PlayerMan1", "Wahkah_Purple");
+	PlayerLevel("Status", 0, "PlayerMan1", "Satan_Purple");
+	PlayerLevel("Status", 0, "PlayerMan1", "Satan_Green");
+	PlayerLevel("Status", 0, "PlayerMan1", "Satan_Purple2");
+	PlayerLevel("Status", 0, "PlayerMan1", "Satan_Green2");
+	PlayerLevel("Status", 0, "PlayerMan1", "Satan_BTZ");
+}

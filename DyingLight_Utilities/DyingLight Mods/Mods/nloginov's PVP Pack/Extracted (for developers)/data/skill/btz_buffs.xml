@@ -1,0 +1,338 @@
+<!-- 
+	#Be The Zombie - Buffs
+-->
+
+<!-- 
+	#singular buffs: +25(s) duration and/or additional effect(s) if the buff is weak
+	#diverse buffs: no additional effects as it is using all the singular buffs
+	
+	#default duration of a booster: 105(s)
+	#add max_stacks="1" to prevent multiple buff stacking
+-->
+
+
+<!-- GENERAL BTZ POTIONS---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+-->
+
+	<!-- #speed booster - singular buff -->
+	
+<buff id="SpeedIncreaseBtZ" duration="120" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="MoveBackwardMaxSpeed" value_add="1.5"/>
+	<property name="MoveForwardMaxSpeed" value_add="1.5"/>
+	<property name="MoveStrafeMaxSpeed" value_add="1.5"/>
+	<property name="MoveSprintSpeed" value_add="1.5"/>
+	
+	<!-- #additional buffs -->
+
+    <hud_icon val="potion_timer_speed"/>
+</buff>
+
+	<!-- #night vision booster - singular buff -->
+	
+<buff id="NightVisionIncreaseBtZ" duration="120" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="NightDamageMul" value_add="0.25"/>
+	
+	<varlist_timeline var="f_game_player_night_vision">
+		<key t="0" val="0"/>
+		<key t="1" val="1"/>
+		<key t_e="-2.5" val="1"/>		
+		<key t_e="0" val="0"/>
+	</varlist_timeline>
+
+	<!-- #additional buffs -->
+
+    <hud_icon val="potion_timer_nightvision"/>
+</buff>
+
+	<!-- #resistance booster - singular buff -->
+
+<buff id="ResistanceIncreaseBtZ" duration="120" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="MeleeDamageReduction" value_add="0.5"/>
+	<property name="BulletDamageReduction" value_add="0.5"/>
+
+	<!-- #additional buffs -->
+
+    <hud_icon val="potion_timer_resistance"/>
+</buff>
+
+	<!-- #stamina booster - singular buff -->
+
+<buff id="StaminaIncreaseBtZ" duration="120" max_stacks="1">
+	<!-- #default buffs -->
+	<!-- stamina is useless in be the zombie, so we will apply additional buffs -->
+
+	<OnGain>
+		<AddHealthPercent value="35"/>
+	</OnGain>
+
+	<!-- #additional buffs -->
+	<property name="HealthRegenerationDelay" value_add="-1.0"/>	<!-- player can regenerate health faster after just being out of combat -->
+	<property name="HealthRegenerationTimeToMax" value_add="-1.0"/>	<!-- player can regenerate health faster -->
+	
+	<property name="RopeEnergyRegenTime" value_add="-2.0"/>	<!-- player can regenerate hook faster -->
+	<property name="TackleCoolDown" value_add="-0.2"/>	<!-- player can use tackle faster -->
+	<property name="TackleSprintMinDuration" value_add="-0.025"/> <!-- player can escape faster from tackle animation -->
+	<property name="CamouflageDuration" value_add="10"/> <!-- player can escape faster from tackle animation -->
+
+    <hud_icon val="potion_timer_stamina"/>
+</buff>
+
+	<!-- #night hunter booster - diverse buff -->
+
+<buff id="GhulStaminaIncreaseBtZ" duration="105" max_stacks="1">
+	<!-- #default buffs -->
+	<!-- stamina is useless in be the zombie, so we will apply additional buffs -->
+
+	<!-- #additional buffs -->
+	<property name="HealthRegenerationDelay" value_add="-0.5"/>	<!-- player can regenerate health faster after just being out of combat -->
+
+    <hud_icon val="potion_timer_stamina"/>
+</buff>
+
+<buff id="GhulSpeedIncreaseBtZ" duration="105" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="MoveBackwardMaxSpeed" value_add="1.0"/>
+	<property name="MoveForwardMaxSpeed" value_add="1.0"/>
+	<property name="MoveStrafeMaxSpeed" value_add="1.0"/>
+	<property name="MoveSprintSpeed" value_add="1.0"/>
+
+	<!-- #additional buffs -->
+
+    <hud_icon val="potion_timer_speed"/>
+</buff>
+
+<buff id="GhulDamageIncreaseBtZ" duration="105" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="BaseDamageMul" value_add="1.0"/>
+
+	<!-- #additional buffs -->
+
+    <hud_icon val="potion_timer_damage"/>
+</buff>
+
+<buff id="GhulResistanceIncreaseBtZ" duration="105" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="MeleeDamageReduction" value_add="0.35"/>
+	<property name="BulletDamageReduction" value_add="0.35"/>
+
+	<!-- #additional buffs -->
+
+
+    <hud_icon val="potion_timer_resistance"/>
+</buff>
+
+<buff id="CloakIncreaseBtZ" duration="30">
+	<OnGain>
+		<AddCloakIgnoreAggression value="30.0"/>
+	</OnGain>
+</buff>
+
+<!-- EVENT BTZ POTIONS-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+-->
+
+<!-- #HALLOWEEN -->
+
+<buff id="Event_Halloween_BtZ1" duration="95" max_stacks="1">
+	<!-- #default buffs -->
+	<property name="MoveBackwardMaxSpeed" value_add="1.0"/>
+	<property name="MoveForwardMaxSpeed" value_add="1.0"/>
+	<property name="MoveStrafeMaxSpeed" value_add="1.0"/>
+	<property name="MoveSprintSpeed" value_add="1.0"/>	
+	<varlist_timeline var="f_game_player_pounced">
+		<key t="0" val="0"/>
+		<key t="0.1" val="0.8"/>
+		<key t="0.3" val="0.6"/>
+		<key t="2" val="0"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="95" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="potion_timer_speed"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ2" duration="15" max_stacks="1">
+	<OnGain>
+		<AddControlsInvert value="1.0" delay="1.0" duration="14.0" camoDelay="0.0" camoDuration="0.0"/>
+	</OnGain>
+	<varlist_timeline var="f_movie_toxic">
+		<key t="0" val="0"/>
+		<key t="0.5" val="1"/>
+		<key t="1" val="1"/>
+		<key t="1.5" val="0.6"/>
+		<key t="2" val="0"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="15" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="icon_pumpkin_juice_hq"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ3" duration="95" max_stacks="1">
+	<property name="BaseDamageMul" value_add="2.0"/>
+	<varlist_timeline var="f_game_player_night_vision">
+		<key t="0" val="0"/>
+		<key t="0.5" val="0.8"/>
+		<key t="1" val="0.6"/>
+		<key t="1.5" val="0.3"/>
+		<key t="2" val="0"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="95" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="potion_timer_damage"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ4" duration="15" max_stacks="1">
+	<OnGain>
+		<ApplyBuff id="Drunk"/>
+	</OnGain>
+	<varlist_timeline var="f_game_player_knockdown">
+		<key t="0" val="0"/>
+		<key t="0.5" val="0.8"/>
+		<key t="0.8" val="0.8"/>
+		<key t="1.4" val="0.4"/>
+		<key t="9.5" val="0.4"/>
+		<key t="15" val="0"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="15" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="icon_pumpkin_juice_hq"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ5" duration="95" max_stacks="1">
+	<OnGain>
+		<AddStaminaPercent value="1.0"/>
+		<AddStaminaDropResistance value="20"/>
+	</OnGain>
+	<varlist_timeline var="f_game_player_gre">
+		<key t="0" val="0"/>
+		<key t="0.5" val="1"/>
+		<key t="1" val="1"/>
+		<key t="1.5" val="0.6"/>
+		<key t="2" val="0"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="95" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="potion_timer_stamina"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ6" duration="15" max_stacks="1">
+	<OnGain>
+		<AddCameraRotate value="1.0" delay="1.0" duration="14.0" camoDelay="0.0" camoDuration="0.0"/>
+	</OnGain>
+	<varlist_timeline var="f_game_saturation">
+		<key t="0" val="1"/>
+		<key t="0.2" val="1.5"/>
+		<key t="0.3" val="2"/>
+		<key t="0.4" val="2.6"/>
+		<key t="2" val="1"/>
+	</varlist_timeline>
+	<sound t="0.1" file="box_bozak_laugh.wav"/>
+	<sound t="15" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+	<hud_icon val="icon_pumpkin_juice_hq"/>
+</buff>
+
+<buff id="Event_Halloween_BtZ7" duration="95" max_stacks="1">
+  <property name="BaseDamageMul" value_add="2.0"/>
+  <property name="MoveBackwardMaxSpeed" value_add="1.0"/>
+  <property name="MoveForwardMaxSpeed" value_add="1.0"/>
+  <property name="MoveStrafeMaxSpeed" value_add="1.0"/>
+  <property name="MoveSprintSpeed" value_add="1.0"/>
+  <varlist_timeline var="f_game_player_night_vision">
+    <key t="0" val="0"/>
+    <key t="3" val="0.9"/>
+    <key t="92" val="0.8"/>
+    <key t="95" val="0"/>
+  </varlist_timeline>
+  <sound t="0.1" file="box_bozak_laugh.wav"/>
+  <sound t="94" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+  <hud_icon val="icon_pumpkin_juice_hq"/>
+</buff>
+
+<!-- #CHRISTMAS -->
+
+<buff id="Event_Christmas_Candy1" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="GhulResistanceIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy2" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="GhulResistanceIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy3" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="NightVisionIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy4" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="NightVisionIncreaseBtZ"/>
+		<ApplyBuff id="GhulDamageIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy5" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="GhulSpeedIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy6" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="GhulSpeedIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy7" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="SpeedIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Candy8" duration="0" max_stacks="1">
+    <OnGain>
+		<ApplyBuff id="SpeedIncreaseBtZ"/>
+    </OnGain>
+</buff>
+
+<buff id="Event_Christmas_Eggnog" duration="600" max_stacks="1">
+  <property name="MoveBackwardMaxSpeed" value_add="2.5"/>
+  <property name="MoveForwardMaxSpeed" value_add="2.5"/>
+  <property name="MoveStrafeMaxSpeed" value_add="2.5"/>
+  <property name="MoveSprintSpeed" value_add="2.5"/>
+  <property name="MeleeDamageReduction" value_add="0.35"/>
+  <property name="BulletDamageReduction" value_add="0.35"/>
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="3" val="1.45"/>
+    <key t="597" val="1.45"/>
+    <key t="600" val="1.0"/>
+  </varlist_timeline>
+  <varlist_timeline var="f_blur_motion">
+		<key t="0" val="0"/>
+		<key t="0.4" val="1.0"/>	
+		<key t_e="-0.2" val="1.0"/>	
+		<key t_e="0" val="0"/>
+	</varlist_timeline>
+  <sound t="0.1" file="Christmas_Bell_02.wav"/>
+  <sound t="50" file="Christmas_Bell_02.wav"/>
+  <sound t="75" file="Christmas_Bell_02.wav"/>
+  <sound t="100" file="Christmas_Bell_02.wav"/>
+  <sound t="119" file="zombieplayer_player_breath_scared_stop_01.wav"/>
+  <hud_icon val="weapon_snowball_big"/>
+</buff>

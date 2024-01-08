@@ -1,0 +1,9 @@
+1. Drag dide_mod.ini, dsound.dll in your Dying Light directory.
+
+2. Create a folder anywhere on your computer, desktop as an example.
+
+3. Move datapaks that you want to play with in multiplayer in that folder.
+
+4. Open dide_mod.ini in your Dying Light directory, after line "[CustomPak]" paste the path to the datapak that you want to load in multiplayer with =1 at the end.
+
+Note: you can load up to 7 datapaks maximum!

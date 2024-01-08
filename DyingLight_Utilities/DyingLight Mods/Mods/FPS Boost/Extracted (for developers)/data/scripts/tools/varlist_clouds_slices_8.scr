@@ -1,0 +1,4 @@
+VarInt( "i_clouds_lower_slices", 0 )
+VarInt( "i_clouds_upper_slices", 0 )
+
+

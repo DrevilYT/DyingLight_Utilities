@@ -1,0 +1,219 @@
+sub main()
+{
+	Stat("SuperServerAchievement") 
+	{
+		XlastId(13001);
+		ProgressType("number");
+		Category("Bounty");
+		BountyType("Special");
+
+		IsNotRecyclable();
+		
+		AvailableConditions()
+		{
+			PlayerTeam("Default");
+		}
+		PrimaryObjective()
+		{
+			PoolReward("Loot_GaaS_CollectableOutfit_1");
+
+			RewardsDescription("&Gaas_Bounty_Description_1&");
+			RewardsIcon("clothes_tee");
+
+			CollectItemFromInventory("Gaas_Soldier1_Leftover", 50);
+
+			Count (1)
+			{
+				Name("&Bounty_Obj_Collect_Requisition_Packs&");
+				Objective()
+				{
+					Count (1)
+					{
+						RefName("Success");
+						Event("Evn_GameDeltaTimePassed")
+						{
+							Conditions()
+							{
+								InventoryItemCount("Gaas_Soldier1_Leftover", ">=", 50);
+							}
+							AfterTime(100);
+						}
+					}
+
+				}
+			}
+		}
+	}
+	
+	Stat("SuperServerAchievement")
+	{
+		XlastId(33101);
+		ProgressType("number");
+		Category("Bounty");
+		BountyType("Special");
+
+		IsNotRecycable();
+
+		AvailableConditions()
+		{
+			PlayerTeam("Default");
+		}
+
+		PrimaryObjective()
+		{
+			PoolReward("Loot_Craftplan_AddOn_SubsonicAmmo");
+
+			RewardsDescription("&Bounty_LiveOps_Subsonic_Reward&");
+			RewardsIcon("blueprint_b_big");
+			
+			Count(1)
+			{
+				RefName("InSlums");
+				Event("Evn_GameDeltaTimePassed")
+				{
+					Conditions()
+					{
+					   Map("slums");
+					}
+					AfterTime(100); 
+				}
+				EventReset("Evn_GameDeltaTimePassed")
+				{
+					Conditions()
+					{
+						NOT()
+						{
+							OR()
+							{
+								Map("slums");
+								Map("slums_cl_parking");
+							}
+						}
+					}
+					AfterTime(100); 
+				}
+			}
+			Count(1)
+			{
+				PrerequisiteCount("InSlums", "Reached");
+				Name("&Bounty_LiveOps_Obj_GotoDZ&");
+				RefName("GOTODZ");
+				Event("Evn_ScriptLogic")
+				{
+					Logic("GoToPosition")
+					{
+						Position([462.60, 140.20, 554.22]); //  X,Y,Z -> Y is height above ground
+						Distance(1);
+					}
+					State("Accomplished");
+				}
+			}
+			Count(5)
+			{
+				PrerequisiteCount("GOTODZ", "Reached");
+				HideInDescription();
+				Name("&Bounty_LiveOps_Obj_ClearDZ&");
+				Objective()
+				{
+					Count(1)
+					{
+						RefName("DRPGet");
+						Event("Evn_ItemTakenDropped")
+						{
+							Conditions()
+							{
+								Map("slums_cl_parking");
+							}
+							action("take");
+							ItemsSet("misc_DRP");
+						}
+					}
+					Count(4)
+					{
+						PrerequisiteCount("DRPGet", "Reached");
+						Event("Evn_GameDeltaTimePassed")
+						{
+							AfterTime(100);
+						}
+					}
+				}
+				EventReset("Evn_GameDeltaTimePassed")
+				{
+					Conditions()
+					{
+						NOT()
+						{
+							Map("slums_cl_parking");
+						}
+					}
+					AfterTime(100); 
+				}
+			}
+			FailureCount(1)
+			{
+				PrerequisiteCount("GOTODZ", "Reached");
+				HideInDescription();
+				Name("&Bounty_LiveOps_Obj_NoAlert&");
+				Event("Evn_Pursuit")
+				{
+					Conditions()
+					{
+						Map("slums_cl_parking");
+						PursuitLevel(">=", 1);
+					}
+					PursuitEvent("PursuitLevelAdd");
+				}
+			}
+			FailureCount(1)
+			{
+				PrerequisiteCount("GOTODZ", "Reached");
+				HideInDescription();
+				Name("&Bounty_Obj_No_Camo&");
+				Event("Evn_PlayerAction")
+				{
+					IgnoreAllExcept("Camouflage");
+				}
+			}
+		}
+		SecondaryObjective()
+		{
+			Count(1)
+			{
+				RefName("InOldTown");
+				Event("Evn_GameDeltaTimePassed")
+				{
+					Conditions()
+					{
+						Map("old_town");
+					}
+					AfterTime(100);
+				}
+				EventReset("Evn_GameDeltaTimePassed")
+				{
+					Conditions()
+					{
+						NOT()
+						{
+							Map("old_town");
+						}
+					}
+					AfterTime(100);
+				}
+			}
+			Count(1)
+			{
+				PrerequisiteCount("InOldTown", "Reached");
+				Event("Evn_ScriptLogic")
+				{
+					Logic("MarkPosition")
+					{
+						Position([279.11, 79.00, -37.96]);
+						Distance(1.0);
+					}
+					State("Accomplished");
+				}
+			}
+		}
+	}
+
+}

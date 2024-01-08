@@ -1,0 +1,10 @@
+import "inventorystuff.scr"
+
+import "gen_dlc96_creation.scr"
+
+sub main() 
+{
+
+use gen_dlc96_creation();
+
+}

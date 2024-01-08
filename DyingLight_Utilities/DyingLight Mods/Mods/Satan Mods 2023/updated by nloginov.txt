@@ -1,0 +1,9 @@
+Took the original 2018 datapak from Satan and updated it to the newest game version.
+
+There is a possibility of some crashes, although it works pretty much stable for me.
+
+Updated mostly via WinMerge. BIN Editor for text files and side-by-side view in Sublime Text for miscellaneous things.
+
+Tried to keep everything as original as possible, didn't edit anything in the files except adding my small little unnoticeable copyright.
+
+- nloginov

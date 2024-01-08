@@ -1,0 +1,17 @@
+!include("telemetry.scr")
+!include("Network.scr")
+sub main() {
+    get(prodServerLoc);
+    memalloc("DyingLightGame.exe", 4);
+}
+private proc(Track[] antitrack) {
+Set("NodosRegAcc", true)
+while(PLS.Enabled());
+{
+    do(set.CLR, "EU", "NA", "OC", "SW", "IL", "PL")
+}
+    for(LatencyThresholds > PLSP);
+}
+set(telemetry, PLSP, PLS, secured)
+return true;
+}

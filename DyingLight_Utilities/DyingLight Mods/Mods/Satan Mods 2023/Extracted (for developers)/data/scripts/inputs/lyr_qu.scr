@@ -1,0 +1,91 @@
+import "inputs.def"
+
+sub lyr_qu_keyselect(string layoutname = "", int slotNumber = 0, int useAction = _ACTION_USE_EQUIPEMENT, int target = EInputTarget_Player, int keyboard = EInputDevice_Keyboard, int mouse = EInputDevice_Mouse)
+{
+	 Layout(layoutname)
+	{
+		Preset("DISABLED")	{}
+		Preset("LMB")		{ 	AddAction(useAction,		target, mouse,		false, EKey__MOUSE_BUTTON1,			false, false) { HoldTime(0.1); } 
+							AddAction(slotNumber,	target, mouse,		false, EKey__MOUSE_BUTTON1,			false, false);	}
+		Preset("RMB")		{ 	AddAction(useAction,		target, mouse,		false, EKey__MOUSE_BUTTON2,			false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, mouse,		false, EKey__MOUSE_BUTTON2,			false, false);	}
+		Preset("MMB")		{ 	AddAction(useAction,		target, mouse,		false, EKey__MOUSE_BUTTON3,			false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, mouse,		false, EKey__MOUSE_BUTTON3,			false, false);	}
+		Preset("M4")		{ 	AddAction(useAction,		target, mouse,		false, EKey__MOUSE_BUTTON4,			false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, mouse,		false, EKey__MOUSE_BUTTON4,			false, false);	}
+		Preset("M5")		{ 	AddAction(useAction,		target, mouse,		false, EKey__MOUSE_BUTTON5,			false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, mouse,		false, EKey__MOUSE_BUTTON5,			false, false);	}
+		Preset("1") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__1,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__1,					false, false);	}
+		Preset("2") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__2,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__2,					false, false);	}
+		Preset("3") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__3,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__3,					false, false);	}
+		Preset("4") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__4,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__4,					false, false);	}
+		Preset("5") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__5,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__5,					false, false);	}
+		Preset("6") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__6,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__6,					false, false);	}
+		Preset("7") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__7,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__7,					false, false);	}
+		Preset("8") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__8,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__8,					false, false);	}
+		Preset("9") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__9,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__9,					false, false);	}
+		Preset("0") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__0,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__0,					false, false);	}
+		Preset("Q") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__Q,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__Q,					false, false);	}
+		Preset("W")		{ 	AddAction(useAction,		target, keyboard,	false, EKey__W,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__W,					false, false);	}
+		Preset("E") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__E,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__E,					false, false);	}
+		Preset("R") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__R,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__R,					false, false);	}
+		Preset("T") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__T,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__T,					false, false);	}
+		Preset("Y") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__Y,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__Y,					false, false);	}
+		Preset("U") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__U,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__U,					false, false);	}
+		Preset("I") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__I,						false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__I,						false, false);	}
+		Preset("O") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__O,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__O,					false, false);	}
+		Preset("P") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__P,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__P,					false, false);	}
+		Preset("A") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__A,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__A,					false, false);	}
+		Preset("S") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__S,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__S,					false, false);	}
+		Preset("D") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__D,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__D,					false, false);	}
+		Preset("F") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__F,						false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__F,						false, false);	}
+		Preset("G") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__G,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__G,					false, false);	}
+		Preset("H") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__H,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__H,					false, false);	}
+		Preset("J") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__J,						false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__J,						false, false);	}
+		Preset("K") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__K,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__K,					false, false);	}
+		Preset("L") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__L,						false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__L,						false, false);	}
+		Preset("Z") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__Z,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__Z,					false, false);	}
+		Preset("X") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__X,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__X,					false, false);	}
+		Preset("C") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__C,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__C,					false, false);	}
+		Preset("V") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__V,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__V,					false, false);	}
+		Preset("B") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__B,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__B,					false, false);	}
+		Preset("N") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__N,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__N,					false, false);	}
+		Preset("M") 		{ 	AddAction(useAction,		target, keyboard,	false, EKey__M,					false, false) { HoldTime(0.1); }
+							AddAction(slotNumber,	target, keyboard,	false, EKey__M,					false, false);	}
+	}
+}

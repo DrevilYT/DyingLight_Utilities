@@ -1,0 +1,61 @@
+sub Reborn_all()
+{
+    // Most basic outfit example
+	Appearance("Antoine_Head", "My_Outfit_name", "My_Outfit_name")
+	{
+		MeshFpp("player_zombie_FPP.msh");
+		MeshTpp("player_zombie_TPP.msh");
+		Skin("player_zombie_level_01_uv_block");
+		Image("hint_timefreeze_btz"); // Pounce image
+		Category(69);
+        ID(1001);
+        Perk("Perk_Outfit10"); // SHU Warrior perk, I believe
+	}
+    
+    // LVL3 hunter
+	Appearance("Antoine_Head", "LVL3_Hunter", "LVL3_Hunter")
+	{
+		MeshFpp("player_zombie_fpp.msh");
+		MeshTpp("player_zombie_tpp.msh");
+		Skin("player_zombie_level_03");
+		Image("hint_btz_tutorial_clawattack"); // Random tutorial image
+		Category(69);
+        ID(1003);
+        Perk("Perk_Outfit11"); // Reduced fall damage
+	}
+
+    // Rakim with purple UV spit
+	Appearance("Antoine_Head", "Purple_BTZ_Rakim", "Purple_BTZ_Rakim")
+	{
+		MeshFpp("player_rakim_fpp.msh");
+		MeshTpp("player_rakim_tpp.msh");
+		Skin("default_purple");
+		Image("hint_tutorial_timefreeze_outfit_legend7"); // Rakim legend image
+		Category(69);
+        ID(1004);
+        Perk("Perk_Outfit11"); // Astronaut outfit perk
+	}
+    
+    // Easter Ninja with yellow Horde spit
+	Appearance("Antoine_Head", "Easter_Yellow_Hump", "Easter_Yellow_Hump")
+	{
+		MeshFpp("player_10_fpp.msh");
+		MeshTpp("player_10_tpp.msh");
+		Skin("easter_green");
+		Image("hint_Tutorial_TimeFreeze_Outfit_AddOn_Easter"); // Easter outfit image
+		Category(69);
+        ID(1005);
+        Perk("Perk_Outfit1"); // Most basic 0.1x health increase perk
+	}
+}
+
+sub Reborn_unlock()
+{
+	// You need to unlock your custom outfits here
+	PlayerLevel("Status", 0, "PlayerMan1", "My_Outfit_name");
+
+	// Examples made by me
+	PlayerLevel("Status", 0, "PlayerMan1", "LVL3_Hunter");
+	PlayerLevel("Status", 0, "PlayerMan1", "Purple_BTZ_Rakim");
+	PlayerLevel("Status", 0, "PlayerMan1", "Easter_Yellow_Hump");
+}
