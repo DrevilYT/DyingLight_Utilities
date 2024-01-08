@@ -1,6 +1,0 @@
-VarFloat("f_sky_distance", -99999.00000000000000000000)
-VarFloat("f_scattering_ext_on", 0.0)
-VarVec3("v_sky_color", [0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000])
-VarInt("i_sky_on", 0)
-
-

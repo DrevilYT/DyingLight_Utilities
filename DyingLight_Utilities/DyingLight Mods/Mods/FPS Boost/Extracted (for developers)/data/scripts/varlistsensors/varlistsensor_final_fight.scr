@@ -1,3 +1,0 @@
-VarFloat("f_dust_amount", 0.0)
-VarFloat( "f_wind_power", 0.0 )
-VarVec3("v_wind_dir", [0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000])

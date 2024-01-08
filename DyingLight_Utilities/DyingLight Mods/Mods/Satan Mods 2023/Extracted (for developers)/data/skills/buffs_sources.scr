@@ -1,7 +1,0 @@
-sub main()
-{
-	Script("lyr_b_buffs.xml");
-	Script("lyr_amm_buffs.xml");
-	Script("buffs.xml");
-    Script("btz_buffs.xml"); //custom made file, Rebuild Mod (GAAS-2021)
-}

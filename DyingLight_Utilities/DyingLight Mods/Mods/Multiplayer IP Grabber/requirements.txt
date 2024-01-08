@@ -1,3 +1,0 @@
-requests
-scapy
-ip2geotools

@@ -1,7 +1,0 @@
-import "inventorystuff.scr"
-import "crash_item_creation.scr" 
-
-sub main() 
-{
-	use crash_item_creation();
-}

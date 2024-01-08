@@ -1,6 +1,0 @@
-1. Drag the .bin file you want to edit on the exe.
-2. .txt file will appear, edit everything  you want in the file and save it.
-3. Drag the original .bin file onto the exe again.
-4. .bin2 file will appear, delete the original .bin file and rename the .bin2 file extension to .bin.
-
-After that your custom text will appear in the game, and can be used in datapaks.

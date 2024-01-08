@@ -1,1 +1,0 @@
-Taken and edited a little bit from https://www.nexusmods.com/dyinglight/mods/947
