@@ -5,6 +5,7 @@
 # Includes
 ## Mods
 - Too many to list lol
+- [View Full List Here](https://github.com/DrevilYT/DyingLight-Utilities/tree/main/DyingLight_Utilities%2FDyingLight%20Mods%2FMods)
 ## Optimizations
 - Settings
 - Data Files
