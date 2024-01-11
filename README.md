@@ -21,4 +21,4 @@
 - [Vengeance2](https://www.nexusmods.com/dyinglight/users/52185291) - Modded game save.
 - [nloginov](https://www.youtube.com/@nloginov1915) - FPS boost modpack and all of the mods.
 - [vismxownz](https://gamebanana.com/members/1403960) - Dying light manager/optimizer.
-- [DrevilYT](https://github.com/drevilyt) - Legit 100% game saves, FPS data script and everything else.
+- [DrevilYT](https://github.com/drevilyt) - Legit 100% game saves, FPS data script, some of the mods and everything else.
