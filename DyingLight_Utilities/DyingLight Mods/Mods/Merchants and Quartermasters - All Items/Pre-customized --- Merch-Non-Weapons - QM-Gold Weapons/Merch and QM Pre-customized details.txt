@@ -1,0 +1,33 @@
+"Merchants And Quartermasters - All Items" mod for Dying Light
+Created By: StinVec
+https://www.nexusmods.com/dyinglight/users/21896034
+
+Pre-customized Mod Version Details
+
+This pre-customized version is configured to limit merchant inventories to
+selling only items that are not melee or firearm weaponry and quartermaster
+inventories to offering gold melee and firearm weaponry only.
+
+You can re-enable any of the disabled items (and disable any enabled items)
+for both merchants and quartermasters by following the customization instructions
+outlined in the included "MAI ReadMe - 2 - To Customize.txt" file.
+
+_____________________________________________
+All Merchant Inventories
+
+	Enabled
+	- All Items That Are Not Melee/Firearm Weaponry 
+
+	Disabled
+	- All Melee/Firearm Weaponry Rarities
+
+_____________________________________________
+All Quartermaster Inventories
+
+	Enabled
+	- All Melee/Firearm Weaponry That Are Gold Rarity 
+
+	Disabled
+	- All Melee/Firearm Weaponry That Are Not Gold Rarity 
+	- All Items That Are Not Melee/Firearm Weaponry 
+_____________________________________________
