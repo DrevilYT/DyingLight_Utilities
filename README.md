@@ -4,14 +4,12 @@
 
 # Includes
 ## Mods
-- Too many to list lol
+- FPS Boost Pack
+- Too many to list here
 - [View Full List Here](https://github.com/DrevilYT/DyingLight-Utilities/tree/main/DyingLight_Utilities%2FDyingLight%20Mods%2FMods)
 ## Optimizations
 - Settings
-- Data Files
-- Mods
-## Game Optimizer
-- Dying Light Manager
+- Keybinds
 ## Saves
 - Modded 100% saves
 - Legit 100% saves
