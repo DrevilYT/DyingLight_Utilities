@@ -23,7 +23,7 @@
 !3dtvSettings(f,f)           // /3dtv ui depth, scene separation/offset (-0.15, 0.041, -0.00722)
 !Version(i)
 
-Resolution(640,480)
+Resolution(426,240)
 Fullscreen()
 Monitor(0)
 TextureQuality("Low")
