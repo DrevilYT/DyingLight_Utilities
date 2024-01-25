@@ -1,7 +1,7 @@
 # DyingLight_Utilities
 - Latest Version: v1.1
 - [Download Latest Version](https://codeload.github.com/DrevilYT/DyingLight-Utilities/zip/refs/heads/main)
-- [Download using Installer](https://drev.uk.to/dlutility)
+- [Download Using Installer](https://drev.uk.to/dlutility)
 
 # Includes
 ## Mods
